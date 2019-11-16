@@ -28,9 +28,9 @@ public class UserService {
     }
 
     public String getUsers() {
-        String result = "";
+        String result = "<h2> User List - <h2><br>";
         for (User user : userRepository.findAll()) {
-            result += user.toString() + "<br>";
+            result += "<h3>" + user.toString() +"</h3>" + "<br>";
         }
         return result;
     }

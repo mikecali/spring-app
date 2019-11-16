@@ -19,19 +19,19 @@ public class ApplicationController {
     @GetMapping("/add/{name}/{city}")
     public String addUser(@PathVariable String name, @PathVariable String city) {
         userService.addUser(name, city);
-        return String.format("%s added !!", name);
+        return String.format("<h3> %s added !! </h3>", name);
     }
 
     @GetMapping("/count")
     public String count() {
-        return "Number of Users - " + Long.toString(userService.count());
+        return "<h3> Number of Users - " + Long.toString(userService.count()) +"</h3>";
     }
 
     @GetMapping("/delete/{id}")
     public String delete(@PathVariable String id) {
         Long userId = Long.parseLong(id);
         userService.deleteById(userId);
-        return "User Deleted..!!";
+        return "<h3> User Deleted..!! </h3>";
     }
 
 }
