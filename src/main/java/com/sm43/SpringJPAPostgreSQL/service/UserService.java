@@ -23,7 +23,7 @@ public class UserService {
         User u2 = new User("Justin", "Wellington");
         userRepository.save(u2);
 
-        User u3 = new User("Bob", "Auckland");
+        User u3 = new User("Bob", "Dunedin");
         userRepository.save(u3);
     }
 
