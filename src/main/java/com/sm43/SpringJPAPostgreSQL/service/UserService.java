@@ -17,13 +17,13 @@ public class UserService {
     }
 
     public void addUsers() {
-        User u1 = new User("Mike", "Manila");
+        User u1 = new User("Mike", "Kalibo");
         userRepository.save(u1);
 
-        User u2 = new User("Justin", "Wellington");
+        User u2 = new User("Joseph", "Wellington");
         userRepository.save(u2);
 
-        User u3 = new User("Bob", "Quezon City");
+        User u3 = new User("Les", "Quezon City");
         userRepository.save(u3);
     }
 
