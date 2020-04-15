@@ -17,7 +17,7 @@ public class UserService {
     }
 
     public void addUsers() {
-        User u1 = new User("Mike", "Kalibo");
+        User u1 = new User("Mike", "Wellington");
         userRepository.save(u1);
 
         User u2 = new User("Joseph", "Wellington");
